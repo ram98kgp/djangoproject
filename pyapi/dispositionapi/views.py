@@ -13,7 +13,7 @@ from config import config
 def makestr(df,column):
     df[column] = df[column].astype(str)
     
-r = redis.Redis('{}'.format(config.redis_host), port = 6379, db = 0)
+# r = redis.Redis('{}'.format(config.redis_host), port = 6379, db = 0)
 encoding = 'utf-8'
 date1 = str(datetime.datetime.now().date() - datetime.timedelta(days=15))
 date2 = str(datetime.datetime.now().date())
